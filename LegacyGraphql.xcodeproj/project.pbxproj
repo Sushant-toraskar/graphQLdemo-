@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92C6031129CC6D170020B9DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6031029CC6D170020B9DC /* AppDelegate.swift */; };
+		92C6031329CC6D170020B9DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6031229CC6D170020B9DC /* SceneDelegate.swift */; };
+		92C6031529CC6D170020B9DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6031429CC6D170020B9DC /* ViewController.swift */; };
+		92C6031829CC6D170020B9DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C6031629CC6D170020B9DC /* Main.storyboard */; };
+		92C6031B29CC6D170020B9DC /* LegacyGraphql.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92C6031929CC6D170020B9DC /* LegacyGraphql.xcdatamodeld */; };
+		92C6031D29CC6D190020B9DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C6031C29CC6D190020B9DC /* Assets.xcassets */; };
+		92C6032029CC6D190020B9DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C6031E29CC6D190020B9DC /* LaunchScreen.storyboard */; };
+		92C6032B29CC6D1A0020B9DC /* LegacyGraphqlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6032A29CC6D1A0020B9DC /* LegacyGraphqlTests.swift */; };
+		92C6033529CC6D1A0020B9DC /* LegacyGraphqlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6033429CC6D1A0020B9DC /* LegacyGraphqlUITests.swift */; };
+		92C6033729CC6D1A0020B9DC /* LegacyGraphqlUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6033629CC6D1A0020B9DC /* LegacyGraphqlUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92C6032729CC6D1A0020B9DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92C6030529CC6D170020B9DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92C6030C29CC6D170020B9DC;
+			remoteInfo = LegacyGraphql;
+		};
+		92C6033129CC6D1A0020B9DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92C6030529CC6D170020B9DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92C6030C29CC6D170020B9DC;
+			remoteInfo = LegacyGraphql;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		92C6030D29CC6D170020B9DC /* LegacyGraphql.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegacyGraphql.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C6031029CC6D170020B9DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		92C6031229CC6D170020B9DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		92C6031429CC6D170020B9DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92C6031729CC6D170020B9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92C6031A29CC6D170020B9DC /* LegacyGraphql.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LegacyGraphql.xcdatamodel; sourceTree = "<group>"; };
+		92C6031C29CC6D190020B9DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92C6031F29CC6D190020B9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92C6032129CC6D190020B9DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92C6032629CC6D1A0020B9DC /* LegacyGraphqlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LegacyGraphqlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C6032A29CC6D1A0020B9DC /* LegacyGraphqlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyGraphqlTests.swift; sourceTree = "<group>"; };
+		92C6033029CC6D1A0020B9DC /* LegacyGraphqlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LegacyGraphqlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C6033429CC6D1A0020B9DC /* LegacyGraphqlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyGraphqlUITests.swift; sourceTree = "<group>"; };
+		92C6033629CC6D1A0020B9DC /* LegacyGraphqlUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyGraphqlUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92C6030A29CC6D170020B9DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92C6032329CC6D1A0020B9DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92C6032D29CC6D1A0020B9DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92C6030429CC6D170020B9DC = {
+			isa = PBXGroup;
+			children = (
+				92C6030F29CC6D170020B9DC /* LegacyGraphql */,
+				92C6032929CC6D1A0020B9DC /* LegacyGraphqlTests */,
+				92C6033329CC6D1A0020B9DC /* LegacyGraphqlUITests */,
+				92C6030E29CC6D170020B9DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92C6030E29CC6D170020B9DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92C6030D29CC6D170020B9DC /* LegacyGraphql.app */,
+				92C6032629CC6D1A0020B9DC /* LegacyGraphqlTests.xctest */,
+				92C6033029CC6D1A0020B9DC /* LegacyGraphqlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92C6030F29CC6D170020B9DC /* LegacyGraphql */ = {
+			isa = PBXGroup;
+			children = (
+				92C6031029CC6D170020B9DC /* AppDelegate.swift */,
+				92C6031229CC6D170020B9DC /* SceneDelegate.swift */,
+				92C6031429CC6D170020B9DC /* ViewController.swift */,
+				92C6031629CC6D170020B9DC /* Main.storyboard */,
+				92C6031C29CC6D190020B9DC /* Assets.xcassets */,
+				92C6031E29CC6D190020B9DC /* LaunchScreen.storyboard */,
+				92C6032129CC6D190020B9DC /* Info.plist */,
+				92C6031929CC6D170020B9DC /* LegacyGraphql.xcdatamodeld */,
+			);
+			path = LegacyGraphql;
+			sourceTree = "<group>";
+		};
+		92C6032929CC6D1A0020B9DC /* LegacyGraphqlTests */ = {
+			isa = PBXGroup;
+			children = (
+				92C6032A29CC6D1A0020B9DC /* LegacyGraphqlTests.swift */,
+			);
+			path = LegacyGraphqlTests;
+			sourceTree = "<group>";
+		};
+		92C6033329CC6D1A0020B9DC /* LegacyGraphqlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				92C6033429CC6D1A0020B9DC /* LegacyGraphqlUITests.swift */,
+				92C6033629CC6D1A0020B9DC /* LegacyGraphqlUITestsLaunchTests.swift */,
+			);
+			path = LegacyGraphqlUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92C6030C29CC6D170020B9DC /* LegacyGraphql */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92C6033A29CC6D1A0020B9DC /* Build configuration list for PBXNativeTarget "LegacyGraphql" */;
+			buildPhases = (
+				92C6030929CC6D170020B9DC /* Sources */,
+				92C6030A29CC6D170020B9DC /* Frameworks */,
+				92C6030B29CC6D170020B9DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LegacyGraphql;
+			productName = LegacyGraphql;
+			productReference = 92C6030D29CC6D170020B9DC /* LegacyGraphql.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92C6032529CC6D1A0020B9DC /* LegacyGraphqlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92C6033D29CC6D1A0020B9DC /* Build configuration list for PBXNativeTarget "LegacyGraphqlTests" */;
+			buildPhases = (
+				92C6032229CC6D1A0020B9DC /* Sources */,
+				92C6032329CC6D1A0020B9DC /* Frameworks */,
+				92C6032429CC6D1A0020B9DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92C6032829CC6D1A0020B9DC /* PBXTargetDependency */,
+			);
+			name = LegacyGraphqlTests;
+			productName = LegacyGraphqlTests;
+			productReference = 92C6032629CC6D1A0020B9DC /* LegacyGraphqlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		92C6032F29CC6D1A0020B9DC /* LegacyGraphqlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92C6034029CC6D1A0020B9DC /* Build configuration list for PBXNativeTarget "LegacyGraphqlUITests" */;
+			buildPhases = (
+				92C6032C29CC6D1A0020B9DC /* Sources */,
+				92C6032D29CC6D1A0020B9DC /* Frameworks */,
+				92C6032E29CC6D1A0020B9DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92C6033229CC6D1A0020B9DC /* PBXTargetDependency */,
+			);
+			name = LegacyGraphqlUITests;
+			productName = LegacyGraphqlUITests;
+			productReference = 92C6033029CC6D1A0020B9DC /* LegacyGraphqlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92C6030529CC6D170020B9DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					92C6030C29CC6D170020B9DC = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					92C6032529CC6D1A0020B9DC = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 92C6030C29CC6D170020B9DC;
+					};
+					92C6032F29CC6D1A0020B9DC = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 92C6030C29CC6D170020B9DC;
+					};
+				};
+			};
+			buildConfigurationList = 92C6030829CC6D170020B9DC /* Build configuration list for PBXProject "LegacyGraphql" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92C6030429CC6D170020B9DC;
+			productRefGroup = 92C6030E29CC6D170020B9DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92C6030C29CC6D170020B9DC /* LegacyGraphql */,
+				92C6032529CC6D1A0020B9DC /* LegacyGraphqlTests */,
+				92C6032F29CC6D1A0020B9DC /* LegacyGraphqlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92C6030B29CC6D170020B9DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92C6032029CC6D190020B9DC /* LaunchScreen.storyboard in Resources */,
+				92C6031D29CC6D190020B9DC /* Assets.xcassets in Resources */,
+				92C6031829CC6D170020B9DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92C6032429CC6D1A0020B9DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92C6032E29CC6D1A0020B9DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92C6030929CC6D170020B9DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92C6031529CC6D170020B9DC /* ViewController.swift in Sources */,
+				92C6031129CC6D170020B9DC /* AppDelegate.swift in Sources */,
+				92C6031B29CC6D170020B9DC /* LegacyGraphql.xcdatamodeld in Sources */,
+				92C6031329CC6D170020B9DC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92C6032229CC6D1A0020B9DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92C6032B29CC6D1A0020B9DC /* LegacyGraphqlTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92C6032C29CC6D1A0020B9DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92C6033529CC6D1A0020B9DC /* LegacyGraphqlUITests.swift in Sources */,
+				92C6033729CC6D1A0020B9DC /* LegacyGraphqlUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92C6032829CC6D1A0020B9DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92C6030C29CC6D170020B9DC /* LegacyGraphql */;
+			targetProxy = 92C6032729CC6D1A0020B9DC /* PBXContainerItemProxy */;
+		};
+		92C6033229CC6D1A0020B9DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92C6030C29CC6D170020B9DC /* LegacyGraphql */;
+			targetProxy = 92C6033129CC6D1A0020B9DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		92C6031629CC6D170020B9DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92C6031729CC6D170020B9DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		92C6031E29CC6D190020B9DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92C6031F29CC6D190020B9DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92C6033829CC6D1A0020B9DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		92C6033929CC6D1A0020B9DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92C6033B29CC6D1A0020B9DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BU3XJ6FN7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LegacyGraphql/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = neosoft.LegacyGraphql;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92C6033C29CC6D1A0020B9DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BU3XJ6FN7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LegacyGraphql/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = neosoft.LegacyGraphql;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		92C6033E29CC6D1A0020B9DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BU3XJ6FN7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = neosoft.LegacyGraphqlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LegacyGraphql.app/LegacyGraphql";
+			};
+			name = Debug;
+		};
+		92C6033F29CC6D1A0020B9DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BU3XJ6FN7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = neosoft.LegacyGraphqlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LegacyGraphql.app/LegacyGraphql";
+			};
+			name = Release;
+		};
+		92C6034129CC6D1A0020B9DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BU3XJ6FN7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = neosoft.LegacyGraphqlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LegacyGraphql;
+			};
+			name = Debug;
+		};
+		92C6034229CC6D1A0020B9DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BU3XJ6FN7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = neosoft.LegacyGraphqlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LegacyGraphql;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92C6030829CC6D170020B9DC /* Build configuration list for PBXProject "LegacyGraphql" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92C6033829CC6D1A0020B9DC /* Debug */,
+				92C6033929CC6D1A0020B9DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92C6033A29CC6D1A0020B9DC /* Build configuration list for PBXNativeTarget "LegacyGraphql" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92C6033B29CC6D1A0020B9DC /* Debug */,
+				92C6033C29CC6D1A0020B9DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92C6033D29CC6D1A0020B9DC /* Build configuration list for PBXNativeTarget "LegacyGraphqlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92C6033E29CC6D1A0020B9DC /* Debug */,
+				92C6033F29CC6D1A0020B9DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92C6034029CC6D1A0020B9DC /* Build configuration list for PBXNativeTarget "LegacyGraphqlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92C6034129CC6D1A0020B9DC /* Debug */,
+				92C6034229CC6D1A0020B9DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		92C6031929CC6D170020B9DC /* LegacyGraphql.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				92C6031A29CC6D170020B9DC /* LegacyGraphql.xcdatamodel */,
+			);
+			currentVersion = 92C6031A29CC6D170020B9DC /* LegacyGraphql.xcdatamodel */;
+			path = LegacyGraphql.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 92C6030529CC6D170020B9DC /* Project object */;
+}
