@@ -1,16 +1,28 @@
-query episodes{
-  episodes{
-    results{
-      name
-      characters{
-        name
-        id
-        image
+query getAllEpisodesWithPage($page : Int) {
+    episodes(page : $page) {
+      info{
+        count
+        pages
+        next
       }
-      id
-      air_date
-      episode
-      created
+      results {
+        name
+      }
     }
-  }
 }
+
+query getAllEpisodes {
+    characters{
+        results {
+            id
+            name
+            status
+            species
+            type
+            gender
+            image
+        }
+    }
+}
+
+

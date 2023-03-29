@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E3506DC7756BF7E963E9164 /* Pods_LegacyGraphql.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180B857BEE3F7BB7D66B8CDC /* Pods_LegacyGraphql.framework */; };
 		92C6031129CC6D170020B9DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6031029CC6D170020B9DC /* AppDelegate.swift */; };
 		92C6031329CC6D170020B9DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6031229CC6D170020B9DC /* SceneDelegate.swift */; };
-		92C6031529CC6D170020B9DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6031429CC6D170020B9DC /* ViewController.swift */; };
+		92C6031529CC6D170020B9DC /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6031429CC6D170020B9DC /* CharactersViewController.swift */; };
 		92C6031829CC6D170020B9DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C6031629CC6D170020B9DC /* Main.storyboard */; };
 		92C6031B29CC6D170020B9DC /* LegacyGraphql.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92C6031929CC6D170020B9DC /* LegacyGraphql.xcdatamodeld */; };
 		92C6031D29CC6D190020B9DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C6031C29CC6D190020B9DC /* Assets.xcassets */; };
@@ -17,6 +18,25 @@
 		92C6032B29CC6D1A0020B9DC /* LegacyGraphqlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6032A29CC6D1A0020B9DC /* LegacyGraphqlTests.swift */; };
 		92C6033529CC6D1A0020B9DC /* LegacyGraphqlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6033429CC6D1A0020B9DC /* LegacyGraphqlUITests.swift */; };
 		92C6033729CC6D1A0020B9DC /* LegacyGraphqlUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6033629CC6D1A0020B9DC /* LegacyGraphqlUITestsLaunchTests.swift */; };
+		92C6034829CC794A0020B9DC /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 92C6034729CC794A0020B9DC /* schema.json */; };
+		92C6034A29CC7A180020B9DC /* generatedFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6034929CC7A180020B9DC /* generatedFile.swift */; };
+		92C6035329CC7E580020B9DC /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 92C6035229CC7E580020B9DC /* Apollo */; };
+		92C6035529CC7E580020B9DC /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 92C6035429CC7E580020B9DC /* ApolloWebSocket */; };
+		92C6035A29CC83FD0020B9DC /* Launch.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 92C6035929CC83FD0020B9DC /* Launch.graphql */; };
+		92C6035D29CC866F0020B9DC /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6035C29CC866E0020B9DC /* Network.swift */; };
+		92C6035F29CC93360020B9DC /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6035E29CC93360020B9DC /* CharacterTableViewCell.swift */; };
+		92C6036229CC982C0020B9DC /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 92C6036129CC982C0020B9DC /* Apollo */; };
+		92C6036429CC982C0020B9DC /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 92C6036329CC982C0020B9DC /* ApolloWebSocket */; };
+		92C6036829CD753D0020B9DC /* CommonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6036629CD753D0020B9DC /* CommonTableViewCell.swift */; };
+		92C6036929CD753D0020B9DC /* CommonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C6036729CD753D0020B9DC /* CommonTableViewCell.xib */; };
+		92C6036E29CD78090020B9DC /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6036D29CD78090020B9DC /* EpisodesViewController.swift */; };
+		92C6037129CD78AE0020B9DC /* EpisodeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6036F29CD78AE0020B9DC /* EpisodeCollectionViewCell.swift */; };
+		92C6037229CD78AE0020B9DC /* EpisodeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C6037029CD78AE0020B9DC /* EpisodeCollectionViewCell.xib */; };
+		92C644A229D1CBDB00C36576 /* EpisodesFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C644A029D1CBDB00C36576 /* EpisodesFooter.swift */; };
+		92C644A329D1CBDB00C36576 /* EpisodesFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C644A129D1CBDB00C36576 /* EpisodesFooter.xib */; };
+		92DEA1F629CDC00000E7E9D6 /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DEA1F529CDC00000E7E9D6 /* CommonViewModel.swift */; };
+		9D2522EF47331D379EE0E4EE /* Pods_LegacyGraphql_LegacyGraphqlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E2BC32F4A15AD731472012 /* Pods_LegacyGraphql_LegacyGraphqlUITests.framework */; };
+		A6448226D73761EBFF187488 /* Pods_LegacyGraphqlTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C52BA6D0C4BD76D29A4860 /* Pods_LegacyGraphqlTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +57,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16C52BA6D0C4BD76D29A4860 /* Pods_LegacyGraphqlTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LegacyGraphqlTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		180B857BEE3F7BB7D66B8CDC /* Pods_LegacyGraphql.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LegacyGraphql.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B1006CE8DB8C4BD7A624882 /* Pods-LegacyGraphqlTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegacyGraphqlTests.release.xcconfig"; path = "Target Support Files/Pods-LegacyGraphqlTests/Pods-LegacyGraphqlTests.release.xcconfig"; sourceTree = "<group>"; };
+		31E2BC32F4A15AD731472012 /* Pods_LegacyGraphql_LegacyGraphqlUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LegacyGraphql_LegacyGraphqlUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B1BC9CCED1CC867F5E1A415 /* Pods-LegacyGraphql.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegacyGraphql.debug.xcconfig"; path = "Target Support Files/Pods-LegacyGraphql/Pods-LegacyGraphql.debug.xcconfig"; sourceTree = "<group>"; };
+		4DC7A7F152FE3130E9075AD1 /* Pods-LegacyGraphqlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegacyGraphqlTests.debug.xcconfig"; path = "Target Support Files/Pods-LegacyGraphqlTests/Pods-LegacyGraphqlTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4FF55B3B4AD72C9C3FD81714 /* Pods-LegacyGraphql.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegacyGraphql.release.xcconfig"; path = "Target Support Files/Pods-LegacyGraphql/Pods-LegacyGraphql.release.xcconfig"; sourceTree = "<group>"; };
 		92C6030D29CC6D170020B9DC /* LegacyGraphql.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegacyGraphql.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C6031029CC6D170020B9DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92C6031229CC6D170020B9DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		92C6031429CC6D170020B9DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		92C6031429CC6D170020B9DC /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		92C6031729CC6D170020B9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92C6031A29CC6D170020B9DC /* LegacyGraphql.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LegacyGraphql.xcdatamodel; sourceTree = "<group>"; };
 		92C6031C29CC6D190020B9DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +78,21 @@
 		92C6033029CC6D1A0020B9DC /* LegacyGraphqlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LegacyGraphqlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C6033429CC6D1A0020B9DC /* LegacyGraphqlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyGraphqlUITests.swift; sourceTree = "<group>"; };
 		92C6033629CC6D1A0020B9DC /* LegacyGraphqlUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyGraphqlUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		92C6034729CC794A0020B9DC /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		92C6034929CC7A180020B9DC /* generatedFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generatedFile.swift; sourceTree = "<group>"; };
+		92C6035929CC83FD0020B9DC /* Launch.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Launch.graphql; sourceTree = "<group>"; };
+		92C6035C29CC866E0020B9DC /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		92C6035E29CC93360020B9DC /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		92C6036629CD753D0020B9DC /* CommonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTableViewCell.swift; sourceTree = "<group>"; };
+		92C6036729CD753D0020B9DC /* CommonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonTableViewCell.xib; sourceTree = "<group>"; };
+		92C6036D29CD78090020B9DC /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
+		92C6036F29CD78AE0020B9DC /* EpisodeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeCollectionViewCell.swift; sourceTree = "<group>"; };
+		92C6037029CD78AE0020B9DC /* EpisodeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeCollectionViewCell.xib; sourceTree = "<group>"; };
+		92C644A029D1CBDB00C36576 /* EpisodesFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesFooter.swift; sourceTree = "<group>"; };
+		92C644A129D1CBDB00C36576 /* EpisodesFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodesFooter.xib; sourceTree = "<group>"; };
+		92DEA1F529CDC00000E7E9D6 /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
+		C29BE2522CB2F03858843F75 /* Pods-LegacyGraphql-LegacyGraphqlUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegacyGraphql-LegacyGraphqlUITests.debug.xcconfig"; path = "Target Support Files/Pods-LegacyGraphql-LegacyGraphqlUITests/Pods-LegacyGraphql-LegacyGraphqlUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0BAB71C3361B6F930CE9086 /* Pods-LegacyGraphql-LegacyGraphqlUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegacyGraphql-LegacyGraphqlUITests.release.xcconfig"; path = "Target Support Files/Pods-LegacyGraphql-LegacyGraphqlUITests/Pods-LegacyGraphql-LegacyGraphqlUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +100,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92C6035329CC7E580020B9DC /* Apollo in Frameworks */,
+				92C6036229CC982C0020B9DC /* Apollo in Frameworks */,
+				92C6036429CC982C0020B9DC /* ApolloWebSocket in Frameworks */,
+				92C6035529CC7E580020B9DC /* ApolloWebSocket in Frameworks */,
+				6E3506DC7756BF7E963E9164 /* Pods_LegacyGraphql.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6448226D73761EBFF187488 /* Pods_LegacyGraphqlTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +120,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D2522EF47331D379EE0E4EE /* Pods_LegacyGraphql_LegacyGraphqlUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C5FFEBE6FFA9C29C660A374 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				180B857BEE3F7BB7D66B8CDC /* Pods_LegacyGraphql.framework */,
+				31E2BC32F4A15AD731472012 /* Pods_LegacyGraphql_LegacyGraphqlUITests.framework */,
+				16C52BA6D0C4BD76D29A4860 /* Pods_LegacyGraphqlTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		92C6030429CC6D170020B9DC = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +144,8 @@
 				92C6032929CC6D1A0020B9DC /* LegacyGraphqlTests */,
 				92C6033329CC6D1A0020B9DC /* LegacyGraphqlUITests */,
 				92C6030E29CC6D170020B9DC /* Products */,
+				9F62B5D9941756E7C2C87527 /* Pods */,
+				2C5FFEBE6FFA9C29C660A374 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,9 +162,10 @@
 		92C6030F29CC6D170020B9DC /* LegacyGraphql */ = {
 			isa = PBXGroup;
 			children = (
+				92C6035B29CC84E10020B9DC /* graphQL */,
+				92C6034629CC78F30020B9DC /* SRC */,
 				92C6031029CC6D170020B9DC /* AppDelegate.swift */,
 				92C6031229CC6D170020B9DC /* SceneDelegate.swift */,
-				92C6031429CC6D170020B9DC /* ViewController.swift */,
 				92C6031629CC6D170020B9DC /* Main.storyboard */,
 				92C6031C29CC6D190020B9DC /* Assets.xcassets */,
 				92C6031E29CC6D190020B9DC /* LaunchScreen.storyboard */,
@@ -130,6 +192,63 @@
 			path = LegacyGraphqlUITests;
 			sourceTree = "<group>";
 		};
+		92C6034629CC78F30020B9DC /* SRC */ = {
+			isa = PBXGroup;
+			children = (
+				92DEA1F529CDC00000E7E9D6 /* CommonViewModel.swift */,
+				92C6036A29CD77BB0020B9DC /* page1 */,
+				92C6036529CD74AC0020B9DC /* page2 */,
+				92C6035C29CC866E0020B9DC /* Network.swift */,
+			);
+			path = SRC;
+			sourceTree = "<group>";
+		};
+		92C6035B29CC84E10020B9DC /* graphQL */ = {
+			isa = PBXGroup;
+			children = (
+				92C6034729CC794A0020B9DC /* schema.json */,
+				92C6034929CC7A180020B9DC /* generatedFile.swift */,
+				92C6035929CC83FD0020B9DC /* Launch.graphql */,
+			);
+			name = graphQL;
+			sourceTree = "<group>";
+		};
+		92C6036529CD74AC0020B9DC /* page2 */ = {
+			isa = PBXGroup;
+			children = (
+				92C6031429CC6D170020B9DC /* CharactersViewController.swift */,
+				92C6035E29CC93360020B9DC /* CharacterTableViewCell.swift */,
+				92C6036629CD753D0020B9DC /* CommonTableViewCell.swift */,
+				92C6036729CD753D0020B9DC /* CommonTableViewCell.xib */,
+			);
+			path = page2;
+			sourceTree = "<group>";
+		};
+		92C6036A29CD77BB0020B9DC /* page1 */ = {
+			isa = PBXGroup;
+			children = (
+				92C6036D29CD78090020B9DC /* EpisodesViewController.swift */,
+				92C6036F29CD78AE0020B9DC /* EpisodeCollectionViewCell.swift */,
+				92C6037029CD78AE0020B9DC /* EpisodeCollectionViewCell.xib */,
+				92C644A029D1CBDB00C36576 /* EpisodesFooter.swift */,
+				92C644A129D1CBDB00C36576 /* EpisodesFooter.xib */,
+			);
+			path = page1;
+			sourceTree = "<group>";
+		};
+		9F62B5D9941756E7C2C87527 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B1BC9CCED1CC867F5E1A415 /* Pods-LegacyGraphql.debug.xcconfig */,
+				4FF55B3B4AD72C9C3FD81714 /* Pods-LegacyGraphql.release.xcconfig */,
+				C29BE2522CB2F03858843F75 /* Pods-LegacyGraphql-LegacyGraphqlUITests.debug.xcconfig */,
+				E0BAB71C3361B6F930CE9086 /* Pods-LegacyGraphql-LegacyGraphqlUITests.release.xcconfig */,
+				4DC7A7F152FE3130E9075AD1 /* Pods-LegacyGraphqlTests.debug.xcconfig */,
+				2B1006CE8DB8C4BD7A624882 /* Pods-LegacyGraphqlTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,15 +256,24 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92C6033A29CC6D1A0020B9DC /* Build configuration list for PBXNativeTarget "LegacyGraphql" */;
 			buildPhases = (
+				92C6034B29CC7B0B0020B9DC /* Generate Apollo GraphQL API */,
+				B8BCA921B587EED62711FFC5 /* [CP] Check Pods Manifest.lock */,
 				92C6030929CC6D170020B9DC /* Sources */,
 				92C6030A29CC6D170020B9DC /* Frameworks */,
 				92C6030B29CC6D170020B9DC /* Resources */,
+				BCCFDEA576A1DE3DD2497187 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = LegacyGraphql;
+			packageProductDependencies = (
+				92C6035229CC7E580020B9DC /* Apollo */,
+				92C6035429CC7E580020B9DC /* ApolloWebSocket */,
+				92C6036129CC982C0020B9DC /* Apollo */,
+				92C6036329CC982C0020B9DC /* ApolloWebSocket */,
+			);
 			productName = LegacyGraphql;
 			productReference = 92C6030D29CC6D170020B9DC /* LegacyGraphql.app */;
 			productType = "com.apple.product-type.application";
@@ -154,6 +282,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92C6033D29CC6D1A0020B9DC /* Build configuration list for PBXNativeTarget "LegacyGraphqlTests" */;
 			buildPhases = (
+				4BDC621BD4CA5BF0F36941B6 /* [CP] Check Pods Manifest.lock */,
 				92C6032229CC6D1A0020B9DC /* Sources */,
 				92C6032329CC6D1A0020B9DC /* Frameworks */,
 				92C6032429CC6D1A0020B9DC /* Resources */,
@@ -172,9 +301,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92C6034029CC6D1A0020B9DC /* Build configuration list for PBXNativeTarget "LegacyGraphqlUITests" */;
 			buildPhases = (
+				254EB72771B2A9411B52CEC8 /* [CP] Check Pods Manifest.lock */,
 				92C6032C29CC6D1A0020B9DC /* Sources */,
 				92C6032D29CC6D1A0020B9DC /* Frameworks */,
 				92C6032E29CC6D1A0020B9DC /* Resources */,
+				4FF76CFC1556F77B1B44B32D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,6 +349,10 @@
 				Base,
 			);
 			mainGroup = 92C6030429CC6D170020B9DC;
+			packageReferences = (
+				92C6035129CC7E580020B9DC /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				92C6036029CC982C0020B9DC /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = 92C6030E29CC6D170020B9DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,8 +369,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92C6034829CC794A0020B9DC /* schema.json in Resources */,
 				92C6032029CC6D190020B9DC /* LaunchScreen.storyboard in Resources */,
+				92C6037229CD78AE0020B9DC /* EpisodeCollectionViewCell.xib in Resources */,
 				92C6031D29CC6D190020B9DC /* Assets.xcassets in Resources */,
+				92C6035A29CC83FD0020B9DC /* Launch.graphql in Resources */,
+				92C6036929CD753D0020B9DC /* CommonTableViewCell.xib in Resources */,
+				92C644A329D1CBDB00C36576 /* EpisodesFooter.xib in Resources */,
 				92C6031829CC6D170020B9DC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,14 +396,143 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		254EB72771B2A9411B52CEC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LegacyGraphql-LegacyGraphqlUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BDC621BD4CA5BF0F36941B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LegacyGraphqlTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FF76CFC1556F77B1B44B32D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LegacyGraphql-LegacyGraphqlUITests/Pods-LegacyGraphql-LegacyGraphqlUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LegacyGraphql-LegacyGraphqlUITests/Pods-LegacyGraphql-LegacyGraphqlUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LegacyGraphql-LegacyGraphqlUITests/Pods-LegacyGraphql-LegacyGraphqlUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92C6034B29CC7B0B0020B9DC /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\n# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" generatedFile.swift\n";
+		};
+		B8BCA921B587EED62711FFC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LegacyGraphql-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCCFDEA576A1DE3DD2497187 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LegacyGraphql/Pods-LegacyGraphql-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LegacyGraphql/Pods-LegacyGraphql-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LegacyGraphql/Pods-LegacyGraphql-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		92C6030929CC6D170020B9DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92C6031529CC6D170020B9DC /* ViewController.swift in Sources */,
+				92C6036829CD753D0020B9DC /* CommonTableViewCell.swift in Sources */,
+				92C6034A29CC7A180020B9DC /* generatedFile.swift in Sources */,
+				92C6037129CD78AE0020B9DC /* EpisodeCollectionViewCell.swift in Sources */,
+				92C6035F29CC93360020B9DC /* CharacterTableViewCell.swift in Sources */,
+				92C6036E29CD78090020B9DC /* EpisodesViewController.swift in Sources */,
+				92C6031529CC6D170020B9DC /* CharactersViewController.swift in Sources */,
+				92C6035D29CC866F0020B9DC /* Network.swift in Sources */,
+				92DEA1F629CDC00000E7E9D6 /* CommonViewModel.swift in Sources */,
 				92C6031129CC6D170020B9DC /* AppDelegate.swift in Sources */,
 				92C6031B29CC6D170020B9DC /* LegacyGraphql.xcdatamodeld in Sources */,
+				92C644A229D1CBDB00C36576 /* EpisodesFooter.swift in Sources */,
 				92C6031329CC6D170020B9DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +705,7 @@
 		};
 		92C6033B29CC6D1A0020B9DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B1BC9CCED1CC867F5E1A415 /* Pods-LegacyGraphql.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -449,6 +719,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +735,7 @@
 		};
 		92C6033C29CC6D1A0020B9DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FF55B3B4AD72C9C3FD81714 /* Pods-LegacyGraphql.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -477,6 +749,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,6 +765,7 @@
 		};
 		92C6033E29CC6D1A0020B9DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DC7A7F152FE3130E9075AD1 /* Pods-LegacyGraphqlTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +786,7 @@
 		};
 		92C6033F29CC6D1A0020B9DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B1006CE8DB8C4BD7A624882 /* Pods-LegacyGraphqlTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +807,7 @@
 		};
 		92C6034129CC6D1A0020B9DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C29BE2522CB2F03858843F75 /* Pods-LegacyGraphql-LegacyGraphqlUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +826,7 @@
 		};
 		92C6034229CC6D1A0020B9DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0BAB71C3361B6F930CE9086 /* Pods-LegacyGraphql-LegacyGraphqlUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -606,6 +883,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		92C6035129CC7E580020B9DC /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.49.0;
+			};
+		};
+		92C6036029CC982C0020B9DC /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.49.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		92C6035229CC7E580020B9DC /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92C6035129CC7E580020B9DC /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		92C6035429CC7E580020B9DC /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92C6035129CC7E580020B9DC /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+		92C6036129CC982C0020B9DC /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92C6035129CC7E580020B9DC /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		92C6036329CC982C0020B9DC /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92C6035129CC7E580020B9DC /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		92C6031929CC6D170020B9DC /* LegacyGraphql.xcdatamodeld */ = {

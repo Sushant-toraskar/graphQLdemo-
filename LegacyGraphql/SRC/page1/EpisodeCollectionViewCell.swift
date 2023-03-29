@@ -9,6 +9,8 @@ import UIKit
 
 class EpisodeCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var name: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

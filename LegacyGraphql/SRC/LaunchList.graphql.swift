@@ -1,8 +1,16 @@
-//
-//  LaunchList.graphql.swift
-//  LegacyGraphql
-//
-//  Created by Neosoft on 23/03/23.
-//
-
-import Foundation
+query episodes{
+  episodes{
+    results{
+      name
+      characters{
+        name
+        id
+        image
+      }
+      id
+      air_date
+      episode
+      created
+    }
+  }
+}
