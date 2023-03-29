@@ -12,8 +12,7 @@ class EpisodesViewController: UIViewController {
     @IBOutlet weak var episodesCollections: UICollectionView!
     
     var viewModel : CommonViewModel?
-    
-    var isLoading = false
+    var isLoading = true
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -33,7 +32,6 @@ class EpisodesViewController: UIViewController {
         episodesCollections.register(UINib(nibName: "EpisodeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "EpisodeCollectionViewCell")
         episodesCollections.register(UINib(nibName: "EpisodesFooter", bundle: nil), forSupplementaryViewOfKind: "UICollectionElementKindSectionFooter", withReuseIdentifier: "EpisodesFooter")
     }
-    
 }
 
 extension EpisodesViewController : UICollectionViewDelegate {
@@ -53,25 +51,34 @@ extension EpisodesViewController : UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let footerCell = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "EpisodesFooter", for: indexPath)
-        footerCell.backgroundColor = .darkGray
+//        footerCell.backgroundColor = .darkGray
         return footerCell
     }
 }
 
 extension EpisodesViewController :  UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("fsdfs")
+//        CharactersViewController
+        let id = viewModel?.allEpisodes?[indexPath.row]?.id
+        let nextViewController = CharactersViewController.loadNib(viewModel: viewModel,id: id)
+        navigationController?.pushViewController(nextViewController, animated: true)
+        
     }
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if indexPath.row == (viewModel?.allEpisodes?.count ?? 100) - 1{
+        guard let allEpisode = viewModel?.allEpisodes?.count else { return }
+        if indexPath.row == allEpisode - 1{
             viewModel?.getEpisodesIfAvailable()
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplaySupplementaryView view: UICollectionReusableView, forElementKind elementKind: String, at indexPath: IndexPath) {
+        print("loader display")
     }
 }
 
 extension EpisodesViewController : UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width/3-10, height: collectionView.frame.width/3)
+        return CGSize(width: collectionView.frame.width/2 - 10, height: collectionView.frame.width/3)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
@@ -81,10 +88,10 @@ extension EpisodesViewController : UICollectionViewDelegateFlowLayout{
 
 extension EpisodesViewController : EpisodesResponce{
     func isLoading(_ request: Bool?) {
-        print("is Loading",request)
-        
-        isLoading = request!
-        episodesCollections.reloadData()
+        DispatchQueue.main.async { [self] in
+            isLoading = request ?? false
+            episodesCollections.reloadData()
+        }
     }
     
     func success() {
@@ -94,7 +101,5 @@ extension EpisodesViewController : EpisodesResponce{
     func failure() {
         print("Error in fetching data")
     }
-    
-    
 }
 

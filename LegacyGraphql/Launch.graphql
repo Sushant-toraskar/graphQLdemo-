@@ -6,6 +6,7 @@ query getAllEpisodesWithPage($page : Int) {
         next
       }
       results {
+        id
         name
       }
     }
@@ -23,6 +24,38 @@ query getAllEpisodes {
             image
         }
     }
+}
+
+query getEpisodeByID($id : [ID!]!) {
+    episodesByIds(ids :$id) {
+        id
+        name
+    air_date
+    episode
+    characters{
+      id
+      image
+      name
+    }
+    }
+}
+
+query getCharacterByID($id : [ID!]!) {
+    charactersByIds(ids :$id){
+    id
+    name
+    status
+    species
+    type
+    gender
+    image
+      location{
+      name
+      type
+      dimension
+      created
+    }
+  }
 }
 
 

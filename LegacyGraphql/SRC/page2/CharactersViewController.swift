@@ -8,50 +8,99 @@
 import UIKit
 import Apollo
 
-class CharactersViewController: UIViewController {
+class CharactersViewController: Extentions {
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var created: UILabel!
+    @IBOutlet weak var episode: UILabel!
+    @IBOutlet weak var characters: UILabel!
+    @IBOutlet weak var charactersArray: UICollectionView!
     
-
-    @IBOutlet weak var episodesTable: UITableView!
+//    @IBOutlet weak var episodesTable: UITableView!
+    var viewModel : CommonViewModel?
+    var id : String?
     
-    var result : GetAllEpisodesQuery.Data?
+    
+    static func loadNib(viewModel: CommonViewModel?, id : String?) -> CharactersViewController{
+        let nextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "CharactersViewController" ) as! CharactersViewController
+        nextVC.viewModel = viewModel
+        nextVC.id = id
+        nextVC.viewModel?.delegate = nextVC
+        nextVC.viewModel?.getEpisodeDetailsById(id: id)
+        return nextVC
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.startLoader()
         setup()
-        Network.shared.apollo.fetch(query: GetAllEpisodesQuery()) { result in
-            switch result {
-            case .success(let graphQLResult):
-                DispatchQueue.main.async { [self] in
-//                    debugPrint())
-                    self.result = graphQLResult.data.map({ data in
-                        return data
-                    })
-                    self.episodesTable.reloadData()
-                }
-//                print("Success! Result: \(graphQLResult)")
-            case .failure(let error):
-                print("Failure! Error: \(error)")
-            }
-        }
+       // self.viewModel?.delegate = self
+       // self.viewModel?.getEpisodeDetailsById(id: id)
     }
     
     func setup(){
-        episodesTable.delegate = self
-        episodesTable.dataSource = self
-    }
-}
-
-extension CharactersViewController : UITableViewDelegate,UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return result?.characters?.results?.count ?? 0
+        charactersArray.delegate = self
+        charactersArray.dataSource = self
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CharacterTableViewCell
-//        cell.textLabel?.text = result?.characters?.results?[indexPath.row]?.name
-        cell.setup(name: result?.characters?.results?[indexPath.row]?.name ?? "", id: result?.characters?.results?[indexPath.row]?.id ?? "", img: result?.characters?.results?[indexPath.row]?.image ?? "")
-//        debugPrint("result",result?.episodes?.__typename)
+    func setupUI(){
+        guard let Ename = viewModel?.Characters?.name ,let episodeName = viewModel?.Characters?.episode,let airDateis = viewModel?.Characters?.airDate  else {
+            return
+        }
+        name.text = "Episode Name : \(Ename)"
+        created.text = "AirDate : \(airDateis)"
+        episode.text = "\(episodeName)"
+        characters.text = "Characters "
+        self.stopLoader()
+    }
+}
+
+extension CharactersViewController : UICollectionViewDelegate{
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        1
+    }
+}
+
+extension CharactersViewController : UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return viewModel?.Characters?.characters.count ?? 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let url = viewModel?.Characters?.characters[indexPath.row]?.image
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier:  "charactersCell", for: indexPath) as! CharactersCell
+        cell.characterImage.sd_setImage(with: URL(string: url ?? ""))
+        cell.characterName.text = viewModel?.Characters?.characters[indexPath.row]?.name ?? ""
         return cell
     }
-
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = CharacterDetailPage.loadnib(viewModel: viewModel,id : viewModel?.Characters?.characters[indexPath.row]?.id)
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
+
+extension CharactersViewController : UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width/2, height: collectionView.frame.height )
+    }
+}
+
+extension CharactersViewController : EpisodesResponce{
+    func isLoading(_ request: Bool?) {
+        DispatchQueue.main.async {
+            self.setupUI()
+            self.charactersArray.reloadData()
+        }
+    }
+    
+    func success() {
+//        episodesCollections.reloadData()
+    }
+    
+    func failure() {
+        print("Error in fetching data")
+    }
+}
+
+
