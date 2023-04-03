@@ -46,6 +46,8 @@ extension EpisodesViewController : UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "EpisodeCollectionViewCell", for: indexPath) as! EpisodeCollectionViewCell
         cell.name.text = viewModel?.allEpisodes?[indexPath.row]?.name
+        cell.date.text = viewModel?.allEpisodes?[indexPath.row]?.airDate
+        cell.episodeNumber.text = viewModel?.allEpisodes?[indexPath.row]?.episode
         return cell
     }
     
@@ -77,12 +79,18 @@ extension EpisodesViewController :  UICollectionViewDataSource {
 }
 
 extension EpisodesViewController : UICollectionViewDelegateFlowLayout{
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width/2 - 10, height: collectionView.frame.width/3)
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        var totalHeight:CGFloat = 30
+//        totalHeight = totalHeight + //
+//        totalHeight = totalHeight + 20
+//        totalHeight = totalHeight + 20
+//        return CGSize(width: collectionView.frame.width - 10, height: totalHeight)
+//    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
-        return isLoading ? CGSize(width: collectionView.frame.width, height: 100) : CGSize.zero
+        
+        
+        return isLoading ? CGSize(width: collectionView.frame.width, height: 80) : CGSize.zero
     }
 }
 

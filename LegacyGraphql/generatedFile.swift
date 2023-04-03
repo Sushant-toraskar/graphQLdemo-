@@ -20,6 +20,9 @@ public final class GetAllEpisodesWithPageQuery: GraphQLQuery {
         results {
           __typename
           id
+          episode
+          air_date
+          created
           name
         }
       }
@@ -184,6 +187,9 @@ public final class GetAllEpisodesWithPageQuery: GraphQLQuery {
           return [
             GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
             GraphQLField("id", type: .scalar(GraphQLID.self)),
+            GraphQLField("episode", type: .scalar(String.self)),
+            GraphQLField("air_date", type: .scalar(String.self)),
+            GraphQLField("created", type: .scalar(String.self)),
             GraphQLField("name", type: .scalar(String.self)),
           ]
         }
@@ -194,8 +200,8 @@ public final class GetAllEpisodesWithPageQuery: GraphQLQuery {
           self.resultMap = unsafeResultMap
         }
 
-        public init(id: GraphQLID? = nil, name: String? = nil) {
-          self.init(unsafeResultMap: ["__typename": "Episode", "id": id, "name": name])
+        public init(id: GraphQLID? = nil, episode: String? = nil, airDate: String? = nil, created: String? = nil, name: String? = nil) {
+          self.init(unsafeResultMap: ["__typename": "Episode", "id": id, "episode": episode, "air_date": airDate, "created": created, "name": name])
         }
 
         public var __typename: String {
@@ -214,6 +220,36 @@ public final class GetAllEpisodesWithPageQuery: GraphQLQuery {
           }
           set {
             resultMap.updateValue(newValue, forKey: "id")
+          }
+        }
+
+        /// The code of the episode.
+        public var episode: String? {
+          get {
+            return resultMap["episode"] as? String
+          }
+          set {
+            resultMap.updateValue(newValue, forKey: "episode")
+          }
+        }
+
+        /// The air date of the episode.
+        public var airDate: String? {
+          get {
+            return resultMap["air_date"] as? String
+          }
+          set {
+            resultMap.updateValue(newValue, forKey: "air_date")
+          }
+        }
+
+        /// Time at which the episode was created in the database.
+        public var created: String? {
+          get {
+            return resultMap["created"] as? String
+          }
+          set {
+            resultMap.updateValue(newValue, forKey: "created")
           }
         }
 

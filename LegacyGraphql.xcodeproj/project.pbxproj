@@ -34,6 +34,9 @@
 		92C6037229CD78AE0020B9DC /* EpisodeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C6037029CD78AE0020B9DC /* EpisodeCollectionViewCell.xib */; };
 		92C644A229D1CBDB00C36576 /* EpisodesFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C644A029D1CBDB00C36576 /* EpisodesFooter.swift */; };
 		92C644A329D1CBDB00C36576 /* EpisodesFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C644A129D1CBDB00C36576 /* EpisodesFooter.xib */; };
+		92C644A529D3301600C36576 /* CharactersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C644A429D3301600C36576 /* CharactersCell.swift */; };
+		92C644A829D440C800C36576 /* CharacterDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C644A729D440C800C36576 /* CharacterDetailPage.swift */; };
+		92C644AA29D4552B00C36576 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C644A929D4552B00C36576 /* Extentions.swift */; };
 		92DEA1F629CDC00000E7E9D6 /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DEA1F529CDC00000E7E9D6 /* CommonViewModel.swift */; };
 		9D2522EF47331D379EE0E4EE /* Pods_LegacyGraphql_LegacyGraphqlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E2BC32F4A15AD731472012 /* Pods_LegacyGraphql_LegacyGraphqlUITests.framework */; };
 		A6448226D73761EBFF187488 /* Pods_LegacyGraphqlTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C52BA6D0C4BD76D29A4860 /* Pods_LegacyGraphqlTests.framework */; };
@@ -90,6 +93,9 @@
 		92C6037029CD78AE0020B9DC /* EpisodeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeCollectionViewCell.xib; sourceTree = "<group>"; };
 		92C644A029D1CBDB00C36576 /* EpisodesFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesFooter.swift; sourceTree = "<group>"; };
 		92C644A129D1CBDB00C36576 /* EpisodesFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodesFooter.xib; sourceTree = "<group>"; };
+		92C644A429D3301600C36576 /* CharactersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCell.swift; sourceTree = "<group>"; };
+		92C644A729D440C800C36576 /* CharacterDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailPage.swift; sourceTree = "<group>"; };
+		92C644A929D4552B00C36576 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		92DEA1F529CDC00000E7E9D6 /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
 		C29BE2522CB2F03858843F75 /* Pods-LegacyGraphql-LegacyGraphqlUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegacyGraphql-LegacyGraphqlUITests.debug.xcconfig"; path = "Target Support Files/Pods-LegacyGraphql-LegacyGraphqlUITests/Pods-LegacyGraphql-LegacyGraphqlUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E0BAB71C3361B6F930CE9086 /* Pods-LegacyGraphql-LegacyGraphqlUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegacyGraphql-LegacyGraphqlUITests.release.xcconfig"; path = "Target Support Files/Pods-LegacyGraphql-LegacyGraphqlUITests/Pods-LegacyGraphql-LegacyGraphqlUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -198,6 +204,7 @@
 				92DEA1F529CDC00000E7E9D6 /* CommonViewModel.swift */,
 				92C6036A29CD77BB0020B9DC /* page1 */,
 				92C6036529CD74AC0020B9DC /* page2 */,
+				92C644A629D4408300C36576 /* page3 */,
 				92C6035C29CC866E0020B9DC /* Network.swift */,
 			);
 			path = SRC;
@@ -220,6 +227,7 @@
 				92C6035E29CC93360020B9DC /* CharacterTableViewCell.swift */,
 				92C6036629CD753D0020B9DC /* CommonTableViewCell.swift */,
 				92C6036729CD753D0020B9DC /* CommonTableViewCell.xib */,
+				92C644A429D3301600C36576 /* CharactersCell.swift */,
 			);
 			path = page2;
 			sourceTree = "<group>";
@@ -234,6 +242,15 @@
 				92C644A129D1CBDB00C36576 /* EpisodesFooter.xib */,
 			);
 			path = page1;
+			sourceTree = "<group>";
+		};
+		92C644A629D4408300C36576 /* page3 */ = {
+			isa = PBXGroup;
+			children = (
+				92C644A729D440C800C36576 /* CharacterDetailPage.swift */,
+				92C644A929D4552B00C36576 /* Extentions.swift */,
+			);
+			path = page3;
 			sourceTree = "<group>";
 		};
 		9F62B5D9941756E7C2C87527 /* Pods */ = {
@@ -527,13 +544,16 @@
 				92C6037129CD78AE0020B9DC /* EpisodeCollectionViewCell.swift in Sources */,
 				92C6035F29CC93360020B9DC /* CharacterTableViewCell.swift in Sources */,
 				92C6036E29CD78090020B9DC /* EpisodesViewController.swift in Sources */,
+				92C644A529D3301600C36576 /* CharactersCell.swift in Sources */,
 				92C6031529CC6D170020B9DC /* CharactersViewController.swift in Sources */,
 				92C6035D29CC866F0020B9DC /* Network.swift in Sources */,
 				92DEA1F629CDC00000E7E9D6 /* CommonViewModel.swift in Sources */,
 				92C6031129CC6D170020B9DC /* AppDelegate.swift in Sources */,
 				92C6031B29CC6D170020B9DC /* LegacyGraphql.xcdatamodeld in Sources */,
 				92C644A229D1CBDB00C36576 /* EpisodesFooter.swift in Sources */,
+				92C644AA29D4552B00C36576 /* Extentions.swift in Sources */,
 				92C6031329CC6D170020B9DC /* SceneDelegate.swift in Sources */,
+				92C644A829D440C800C36576 /* CharacterDetailPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

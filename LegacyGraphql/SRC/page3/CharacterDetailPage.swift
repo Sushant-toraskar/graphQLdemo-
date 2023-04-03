@@ -28,6 +28,7 @@ class CharacterDetailPage: Extentions {
         viewModel?.getCharacterDetailsById(id: id)
         characterImage.layer.borderColor = UIColor.black.cgColor
         characterImage.layer.borderWidth = 1.0
+        characterImage.layer.cornerRadius = 10
     }
     
     static func loadnib(viewModel : CommonViewModel?, id : String?)-> CharacterDetailPage {
@@ -39,8 +40,8 @@ class CharacterDetailPage: Extentions {
     }
     
     private func setupUI(){
-        status.text = "Status : \(viewModel?.characterDetails?.status ?? "")"
-        name.text = "Character Name : \(viewModel?.characterDetails?.name ?? "")"
+        status.text = "\(viewModel?.characterDetails?.status ?? "")"
+        name.text = " \(viewModel?.characterDetails?.name ?? "")"
         species.text = "Species : \(viewModel?.characterDetails?.species ?? "")"
         gender.text = "Gender : \(viewModel?.characterDetails?.gender ?? "")"
         lName.text = "Exact Location : \(viewModel?.characterDetails?.location?.name ?? "")"

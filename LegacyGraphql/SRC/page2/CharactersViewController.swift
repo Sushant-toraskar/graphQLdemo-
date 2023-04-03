@@ -42,14 +42,16 @@ class CharactersViewController: Extentions {
         charactersArray.dataSource = self
     }
     
+    
+    
     func setupUI(){
         guard let Ename = viewModel?.Characters?.name ,let episodeName = viewModel?.Characters?.episode,let airDateis = viewModel?.Characters?.airDate  else {
             return
         }
-        name.text = "Episode Name : \(Ename)"
-        created.text = "AirDate : \(airDateis)"
+        name.text = "\(Ename)"
+        created.text = "\(airDateis)"
         episode.text = "\(episodeName)"
-        characters.text = "Characters "
+//        characters.text = "\()"
         self.stopLoader()
     }
 }
@@ -81,9 +83,9 @@ extension CharactersViewController : UICollectionViewDataSource{
 }
 
 extension CharactersViewController : UICollectionViewDelegateFlowLayout{
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width/2, height: collectionView.frame.height )
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return CGSize(width: collectionView.frame.width/2, height: collectionView.frame.height )
+//    }
 }
 
 extension CharactersViewController : EpisodesResponce{

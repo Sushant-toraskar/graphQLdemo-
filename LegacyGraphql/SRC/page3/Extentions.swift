@@ -11,10 +11,11 @@ import UIKit
 class Extentions : UIViewController{
     let spinnerview = UIView()
     let activityindicator = UIActivityIndicatorView(style: .large)
-    
+
+
     func startLoader(){
         spinnerview.frame = self.view.frame
-        spinnerview.backgroundColor =  UIColor(red: 255, green: 255, blue: 255, alpha: 0.3)
+        spinnerview.backgroundColor =  UIColor(red: 2, green: 2, blue: 2, alpha: 0.2)
         activityindicator.center = spinnerview.center
         spinnerview.addSubview(activityindicator)
         activityindicator.startAnimating()
@@ -23,4 +24,18 @@ class Extentions : UIViewController{
     func stopLoader(){
         spinnerview.isHidden = true
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationController?.navigationBar.backItem?.hidesBackButton = true
+        let back = UIBarButtonItem(image: UIImage(systemName: "arrow.backward"), style: .plain, target: self, action: #selector(goBack))
+        back.tintColor = .white
+        navigationItem.leftBarButtonItem = back
+    }
+    
+    @objc func goBack(){
+        navigationController?.popViewController(animated: true)
+    }
+    
+   
 }
