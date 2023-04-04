@@ -20,6 +20,7 @@ class CharacterDetailPage: Extentions {
     @IBOutlet weak var gender: UILabel!
     @IBOutlet weak var lName: UILabel!
     @IBOutlet weak var lType: UILabel!
+    @IBOutlet weak var alivestatus: UIImageView!
     @IBOutlet weak var ldimention: UILabel!
     
     override func viewDidLoad() {
@@ -41,6 +42,14 @@ class CharacterDetailPage: Extentions {
     
     private func setupUI(){
         status.text = "\(viewModel?.characterDetails?.status ?? "")"
+        if let status = viewModel?.characterDetails?.status{
+            if status.lowercased().contains("alive"){
+                alivestatus.tintColor = .green
+            }
+        }else{
+            alivestatus.isHidden = true
+        }
+        
         name.text = " \(viewModel?.characterDetails?.name ?? "")"
         species.text = "Species : \(viewModel?.characterDetails?.species ?? "")"
         gender.text = "Gender : \(viewModel?.characterDetails?.gender ?? "")"
