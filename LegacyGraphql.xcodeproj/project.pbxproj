@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6E3506DC7756BF7E963E9164 /* Pods_LegacyGraphql.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180B857BEE3F7BB7D66B8CDC /* Pods_LegacyGraphql.framework */; };
+		923CF98B29DC4EDC000DF6BB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 923CF98A29DC4EDC000DF6BB /* FirebaseAnalytics */; };
+		923CF98D29DC4EDC000DF6BB /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 923CF98C29DC4EDC000DF6BB /* FirebaseCrashlytics */; };
+		923CF98F29DC4EDC000DF6BB /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 923CF98E29DC4EDC000DF6BB /* FirebaseDatabase */; };
+		923CF99129DC4EDC000DF6BB /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 923CF99029DC4EDC000DF6BB /* FirebaseDatabaseSwift */; };
+		923CF99329DC4EDC000DF6BB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 923CF99229DC4EDC000DF6BB /* FirebaseStorage */; };
+		923CF99629DD442E000DF6BB /* RCValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923CF99529DD442E000DF6BB /* RCValues.swift */; };
+		923CF99829DD7246000DF6BB /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 923CF99729DD7246000DF6BB /* FirebaseRemoteConfig */; };
+		923CF99A29DD88E4000DF6BB /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 923CF99929DD88E4000DF6BB /* FirebaseRemoteConfigSwift */; };
 		92C6031129CC6D170020B9DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6031029CC6D170020B9DC /* AppDelegate.swift */; };
 		92C6031329CC6D170020B9DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6031229CC6D170020B9DC /* SceneDelegate.swift */; };
 		92C6031529CC6D170020B9DC /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C6031429CC6D170020B9DC /* CharactersViewController.swift */; };
@@ -38,6 +46,8 @@
 		92C644A829D440C800C36576 /* CharacterDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C644A729D440C800C36576 /* CharacterDetailPage.swift */; };
 		92C644AA29D4552B00C36576 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C644A929D4552B00C36576 /* Extentions.swift */; };
 		92DEA1F629CDC00000E7E9D6 /* CommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DEA1F529CDC00000E7E9D6 /* CommonViewModel.swift */; };
+		92E36B5429DC351700BFCF14 /* flashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E36B5329DC351700BFCF14 /* flashScreenVC.swift */; };
+		92E36B5629DC3EBD00BFCF14 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92E36B5529DC3EBD00BFCF14 /* GoogleService-Info.plist */; };
 		9D2522EF47331D379EE0E4EE /* Pods_LegacyGraphql_LegacyGraphqlUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E2BC32F4A15AD731472012 /* Pods_LegacyGraphql_LegacyGraphqlUITests.framework */; };
 		A6448226D73761EBFF187488 /* Pods_LegacyGraphqlTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16C52BA6D0C4BD76D29A4860 /* Pods_LegacyGraphqlTests.framework */; };
 /* End PBXBuildFile section */
@@ -67,6 +77,7 @@
 		3B1BC9CCED1CC867F5E1A415 /* Pods-LegacyGraphql.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegacyGraphql.debug.xcconfig"; path = "Target Support Files/Pods-LegacyGraphql/Pods-LegacyGraphql.debug.xcconfig"; sourceTree = "<group>"; };
 		4DC7A7F152FE3130E9075AD1 /* Pods-LegacyGraphqlTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegacyGraphqlTests.debug.xcconfig"; path = "Target Support Files/Pods-LegacyGraphqlTests/Pods-LegacyGraphqlTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4FF55B3B4AD72C9C3FD81714 /* Pods-LegacyGraphql.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegacyGraphql.release.xcconfig"; path = "Target Support Files/Pods-LegacyGraphql/Pods-LegacyGraphql.release.xcconfig"; sourceTree = "<group>"; };
+		923CF99529DD442E000DF6BB /* RCValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCValues.swift; sourceTree = "<group>"; };
 		92C6030D29CC6D170020B9DC /* LegacyGraphql.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegacyGraphql.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C6031029CC6D170020B9DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92C6031229CC6D170020B9DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +108,8 @@
 		92C644A729D440C800C36576 /* CharacterDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailPage.swift; sourceTree = "<group>"; };
 		92C644A929D4552B00C36576 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		92DEA1F529CDC00000E7E9D6 /* CommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewModel.swift; sourceTree = "<group>"; };
+		92E36B5329DC351700BFCF14 /* flashScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flashScreenVC.swift; sourceTree = "<group>"; };
+		92E36B5529DC3EBD00BFCF14 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C29BE2522CB2F03858843F75 /* Pods-LegacyGraphql-LegacyGraphqlUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegacyGraphql-LegacyGraphqlUITests.debug.xcconfig"; path = "Target Support Files/Pods-LegacyGraphql-LegacyGraphqlUITests/Pods-LegacyGraphql-LegacyGraphqlUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E0BAB71C3361B6F930CE9086 /* Pods-LegacyGraphql-LegacyGraphqlUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LegacyGraphql-LegacyGraphqlUITests.release.xcconfig"; path = "Target Support Files/Pods-LegacyGraphql-LegacyGraphqlUITests/Pods-LegacyGraphql-LegacyGraphqlUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,10 +119,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				923CF99829DD7246000DF6BB /* FirebaseRemoteConfig in Frameworks */,
 				92C6035329CC7E580020B9DC /* Apollo in Frameworks */,
 				92C6036229CC982C0020B9DC /* Apollo in Frameworks */,
+				923CF98B29DC4EDC000DF6BB /* FirebaseAnalytics in Frameworks */,
+				923CF99329DC4EDC000DF6BB /* FirebaseStorage in Frameworks */,
+				923CF99129DC4EDC000DF6BB /* FirebaseDatabaseSwift in Frameworks */,
+				923CF98D29DC4EDC000DF6BB /* FirebaseCrashlytics in Frameworks */,
 				92C6036429CC982C0020B9DC /* ApolloWebSocket in Frameworks */,
 				92C6035529CC7E580020B9DC /* ApolloWebSocket in Frameworks */,
+				923CF99A29DD88E4000DF6BB /* FirebaseRemoteConfigSwift in Frameworks */,
+				923CF98F29DC4EDC000DF6BB /* FirebaseDatabase in Frameworks */,
 				6E3506DC7756BF7E963E9164 /* Pods_LegacyGraphql.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +163,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		923CF99429DD4324000DF6BB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				923CF99529DD442E000DF6BB /* RCValues.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		92C6030429CC6D170020B9DC = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				92C6035B29CC84E10020B9DC /* graphQL */,
+				923CF99429DD4324000DF6BB /* Assets */,
 				92C6034629CC78F30020B9DC /* SRC */,
 				92C6031029CC6D170020B9DC /* AppDelegate.swift */,
 				92C6031229CC6D170020B9DC /* SceneDelegate.swift */,
@@ -177,6 +206,7 @@
 				92C6031E29CC6D190020B9DC /* LaunchScreen.storyboard */,
 				92C6032129CC6D190020B9DC /* Info.plist */,
 				92C6031929CC6D170020B9DC /* LegacyGraphql.xcdatamodeld */,
+				92E36B5529DC3EBD00BFCF14 /* GoogleService-Info.plist */,
 			);
 			path = LegacyGraphql;
 			sourceTree = "<group>";
@@ -206,6 +236,7 @@
 				92C6036529CD74AC0020B9DC /* page2 */,
 				92C644A629D4408300C36576 /* page3 */,
 				92C6035C29CC866E0020B9DC /* Network.swift */,
+				92E36B5329DC351700BFCF14 /* flashScreenVC.swift */,
 			);
 			path = SRC;
 			sourceTree = "<group>";
@@ -273,8 +304,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92C6033A29CC6D1A0020B9DC /* Build configuration list for PBXNativeTarget "LegacyGraphql" */;
 			buildPhases = (
-				92C6034B29CC7B0B0020B9DC /* Generate Apollo GraphQL API */,
 				B8BCA921B587EED62711FFC5 /* [CP] Check Pods Manifest.lock */,
+				92C6034B29CC7B0B0020B9DC /* Generate Apollo GraphQL API */,
 				92C6030929CC6D170020B9DC /* Sources */,
 				92C6030A29CC6D170020B9DC /* Frameworks */,
 				92C6030B29CC6D170020B9DC /* Resources */,
@@ -290,6 +321,13 @@
 				92C6035429CC7E580020B9DC /* ApolloWebSocket */,
 				92C6036129CC982C0020B9DC /* Apollo */,
 				92C6036329CC982C0020B9DC /* ApolloWebSocket */,
+				923CF98A29DC4EDC000DF6BB /* FirebaseAnalytics */,
+				923CF98C29DC4EDC000DF6BB /* FirebaseCrashlytics */,
+				923CF98E29DC4EDC000DF6BB /* FirebaseDatabase */,
+				923CF99029DC4EDC000DF6BB /* FirebaseDatabaseSwift */,
+				923CF99229DC4EDC000DF6BB /* FirebaseStorage */,
+				923CF99729DD7246000DF6BB /* FirebaseRemoteConfig */,
+				923CF99929DD88E4000DF6BB /* FirebaseRemoteConfigSwift */,
 			);
 			productName = LegacyGraphql;
 			productReference = 92C6030D29CC6D170020B9DC /* LegacyGraphql.app */;
@@ -369,6 +407,7 @@
 			packageReferences = (
 				92C6035129CC7E580020B9DC /* XCRemoteSwiftPackageReference "apollo-ios" */,
 				92C6036029CC982C0020B9DC /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				923CF98929DC4EDC000DF6BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 92C6030E29CC6D170020B9DC /* Products */;
 			projectDirPath = "";
@@ -388,6 +427,7 @@
 			files = (
 				92C6034829CC794A0020B9DC /* schema.json in Resources */,
 				92C6032029CC6D190020B9DC /* LaunchScreen.storyboard in Resources */,
+				92E36B5629DC3EBD00BFCF14 /* GoogleService-Info.plist in Resources */,
 				92C6037229CD78AE0020B9DC /* EpisodeCollectionViewCell.xib in Resources */,
 				92C6031D29CC6D190020B9DC /* Assets.xcassets in Resources */,
 				92C6035A29CC83FD0020B9DC /* Launch.graphql in Resources */,
@@ -544,6 +584,7 @@
 				92C6037129CD78AE0020B9DC /* EpisodeCollectionViewCell.swift in Sources */,
 				92C6035F29CC93360020B9DC /* CharacterTableViewCell.swift in Sources */,
 				92C6036E29CD78090020B9DC /* EpisodesViewController.swift in Sources */,
+				92E36B5429DC351700BFCF14 /* flashScreenVC.swift in Sources */,
 				92C644A529D3301600C36576 /* CharactersCell.swift in Sources */,
 				92C6031529CC6D170020B9DC /* CharactersViewController.swift in Sources */,
 				92C6035D29CC866F0020B9DC /* Network.swift in Sources */,
@@ -552,6 +593,7 @@
 				92C6031B29CC6D170020B9DC /* LegacyGraphql.xcdatamodeld in Sources */,
 				92C644A229D1CBDB00C36576 /* EpisodesFooter.swift in Sources */,
 				92C644AA29D4552B00C36576 /* Extentions.swift in Sources */,
+				923CF99629DD442E000DF6BB /* RCValues.swift in Sources */,
 				92C6031329CC6D170020B9DC /* SceneDelegate.swift in Sources */,
 				92C644A829D440C800C36576 /* CharacterDetailPage.swift in Sources */,
 			);
@@ -737,6 +779,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
@@ -767,6 +810,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
@@ -905,6 +949,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		923CF98929DC4EDC000DF6BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		92C6035129CC7E580020B9DC /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apollographql/apollo-ios";
@@ -924,6 +976,41 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		923CF98A29DC4EDC000DF6BB /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 923CF98929DC4EDC000DF6BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		923CF98C29DC4EDC000DF6BB /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 923CF98929DC4EDC000DF6BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		923CF98E29DC4EDC000DF6BB /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 923CF98929DC4EDC000DF6BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		923CF99029DC4EDC000DF6BB /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 923CF98929DC4EDC000DF6BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		923CF99229DC4EDC000DF6BB /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 923CF98929DC4EDC000DF6BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		923CF99729DD7246000DF6BB /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 923CF98929DC4EDC000DF6BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		923CF99929DD88E4000DF6BB /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 923CF98929DC4EDC000DF6BB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
 		92C6035229CC7E580020B9DC /* Apollo */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 92C6035129CC7E580020B9DC /* XCRemoteSwiftPackageReference "apollo-ios" */;

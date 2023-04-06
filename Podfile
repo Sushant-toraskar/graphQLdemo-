@@ -7,6 +7,7 @@ target 'LegacyGraphql' do
 
   # Pods for LegacyGraphql
 pod 'SDWebImage'
+pod 'SDWebImageFLPlugin'
 
   target 'LegacyGraphqlTests' do
     inherit! :search_paths

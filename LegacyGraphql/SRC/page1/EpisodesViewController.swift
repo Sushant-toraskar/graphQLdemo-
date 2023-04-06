@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class EpisodesViewController: UIViewController {
     
@@ -16,8 +17,23 @@ class EpisodesViewController: UIViewController {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        Analytics.logEvent("Episode_screen_view", parameters: [
+            AnalyticsParameterScreenName: "episodes",
+             "episode_name": "allEpisodes"
+        ])
+        RCValues.sharedInstance.remoteConfig.configValue(forKey: "")
         viewModel = CommonViewModel(delegate: self)
     }
+    
+    
+    func configSetup(){
+//        remoteConfig = RemoteConfig.remoteConfig()
+//        let settings = RemoteConfigSettings()
+//        settings.minimumFetchInterval = 0
+//        remoteConfig.configSettings = settings
+
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,6 +76,14 @@ extension EpisodesViewController : UICollectionViewDelegate {
 
 extension EpisodesViewController :  UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        Analytics.logEvent("Episode_screen_view", parameters: [
+            AnalyticsParameterScreenName: "episodes",
+            "episode_name": viewModel?.allEpisodes?[indexPath.row]?.name ?? "Test"
+        ])
+        //Analytics
+        
+        //
+        
 //        CharactersViewController
         let id = viewModel?.allEpisodes?[indexPath.row]?.id
         let nextViewController = CharactersViewController.loadNib(viewModel: viewModel,id: id)
